@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>junior eletrica e cia</title>
+    <!-- Incluir links para seus arquivos CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        body {
+            background-image: url('https://www.infoescola.com/wp-content/uploads/2017/05/eletricista_567307042.jpg');
+            /* Ajuste o estilo da imagem de fundo conforme necessário */
+            background-size: cover;
+            background-position: center;
+            /* Defina outras propriedades de fundo conforme desejado */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Cabeçalho do site -->
+        <h1>Orçamento de Manutenção Elétrica</h1>
+        <!-- Navegação -->
+        <nav>
+            <ul>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <!-- Corrija o link do Orçamento para apontar para a seção correta -->
+                <li><a href="#solicitacao-orcamento">Orçamento</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="servicos">
+        <!-- Seção de serviços -->
+        <h2>Nossos Serviços</h2>
+        <!-- Descrição dos serviços oferecidos -->
+    </section>
+
+    <section id="contato">
+        <!-- Formulário de contato -->
+        <h2>Entre em Contato</h2>
+        <!-- Seu formulário de contato vai aqui -->
+    </section>
+
+    <!-- Seção para solicitar orçamento -->
+    <section id="solicitacao-orcamento">
+        <h2>Solicitar Orçamento</h2>
+        <form action="processar_orcamento.php" method="post">
+            <!-- Campos para o formulário de solicitação de orçamento -->
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="whatsapp">WhatsApp:</label>
+            <input type="text" id="whatsapp" name="whatsapp" required>
+
+            <label for="descricao">Descrição:</label>
+            <textarea id="descricao" name="descricao" required></textarea>
+            
+            <input type="submit" value="Enviar Solicitação">
+        </form>
+    </section>
+
+    <footer>
+        <!-- Rodapé do site -->
+        <p>© 2023 junior. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
